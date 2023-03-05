@@ -1,0 +1,56 @@
+First Program with Java
+
+- Every java program starts with a class
+- Class naming convention
+	- class name should (not must) start with a capital letter
+	- class name should be noun
+	- class name can only start with a letter, underscore or dollar sign
+	- file name and class name should be same, because byte code is generated 	  with class name
+
+- Steps to Execute Java Program
+	- Open cmd
+		1. type - javac FileName.java
+			- this command will trigger JDK and compiles the code or we can say that this command generates the byte code
+		2. type - java ClassName
+			- this command will trigger JVM and JVM will convert the byte code into native code and executes line by line
+			- but JVM needs main method to get executed...
+
+
+Why main is public ?
+- 4 types of access specifiers
+	public
+	protected
+	default
+	private
+
+Why main is static ?
+- because main method needs to be loaded first, and in Java only static things are loaded into memory with class...
+
+Why main is void ?
+- because main returns nothing in Java
+
+String args[]
+- CLI - command line arguments
+
+What is System ?
+- System is a pre-defined class
+	- we use System class for 3 purpose
+		System.out	  	- to print output on console
+		System.in     	- to take input from user
+		System.err	 	- to print output in error form
+
+What is out ?
+- object of PrintStream class
+- used to display output on console
+
+What is println ?
+- method inside PrintStream class
+
+Take Input from Command Line
+1. Build calculator and perform add, sub, div and mul
+2. Take temperature in celcius and convert into fahrenheit
+3. Take principal, rate of interest and time as input and 
+calculate Simple Interest
+
+
+

@@ -1,0 +1,66 @@
+First Program in Java
+
+- Each java program starts with a class
+- Class naming conventions
+	- it should be noun
+	- class name should (not must) starts with a capital letter
+	- class name can only start with a letter, underscore or dollar sign
+	- class name and file name should (not must) be same
+
+- Execution of a java program
+  a. open cmd on the location of code and type 
+		- javac FileName.java
+		- this command will trigger JDK and compiles the code
+		- now our source code will be converted into byte code
+  b. now type
+		- java ClassName
+		- this command will trigger JVM and convert byte code to machine code
+		- JVM interpret/execute the code line by line
+  c. now insert a main method inside class
+		public static void main (String []args) {....}
+
+What is public ?
+- Java has 4 types of access specifiers
+  public - it could be accessed from anywhere, anyone can access public things
+  protected - could be accessed outside a package using inheritance
+  default	- could only be accessed within same package
+  private - could only be accessed within the class
+- JVM search for main method in our program
+- because main method is the entry point of our program
+- JVM is in some different directory and JVM has to access main method
+
+What is Static ?
+- JVM always needs to execute main first
+- In java all static things are loaded with class in memory
+- if something is non-static in Java then it could be accessed only with object of the class
+
+What is void ?
+- Each method has a return type, main is also a method
+- void is used when method returns nothing
+- main returns nothing in Java
+
+What is String []args ?
+- Used for command line arguments
+
+Can we define more than one main method inside one class?
+- yes we can define, but only one of them will execute
+- only the main method with proper syntax will get executed
+
+Can we interchange public static void ?
+- we can interchange public and static
+- we cannot interchange void
+
+
+Data Types
+- Primitive
+	- fixed memory allocation
+	- they all have a default value
+	- pre-defined data types
+
+- Non-Primitive
+	- dynamic memory allocation
+	- they have null value by default
+	- user-defined 
+
+
+
