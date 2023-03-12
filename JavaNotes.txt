@@ -62,5 +62,75 @@ Data Types
 	- they have null value by default
 	- user-defined 
 
+Taking Input
+- System.in
 
+InputStream - to take input in Java
+
+.in 
+- object of InputStream class
+- used to take input through keyboard
+
+Buffer
+Scanner
+- used to store buffer
+
+Control Flow
+- If Else
+- Loop
+- Switch Case
+
+Operators
+- Arithmetic Operators
+	+, -, /, *, %
+- Assignment Operators
+	=, +=, -=, /=, *=, %=
+- Relational Operators
+	==, >, <, >=, <=, !=
+- Logical Operators
+	&&, ||, !
+- Bitwise Operators
+	&, |, ^, ~, <<, >>, >>>
+- Unary Operators
+	+, -, ++, --, !
+- Other Operators
+	instanceof, ternary
+
+
+Bitwise Operators
+
+Bitwise AND
+a	b	a & b
+0	0	  0
+0	1	  0
+1	0     0
+1	1	  1
+
+Bitwise OR
+a	b	a | b
+0	0	  0
+0	1	  1
+1	0     1
+1	1	  1
+
+Bitwise XOR
+a	b	a & b
+0	0	  0
+0	1	  1
+1	0     1
+1	1	  0
+
+Bitwise Complement - ~
+1s Complement	- convert 0 to 1 and vice versa
+2s Complement	- first apply 1s Complement and then add 1 in last bit
+
+
+Loops
+- For
+- While
+- do...while
+
+- Prime Number
+	i/p : 17
+	o/p : prime
 
