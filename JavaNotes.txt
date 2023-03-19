@@ -134,3 +134,27 @@ Loops
 	i/p : 17
 	o/p : prime
 
+- Count digits in a number
+	i/p : 35214
+	o/p : 5
+
+- Count Zeros in a number
+	i/p : 104054003
+	o/p : 4
+
+- ArmStrong Number
+	i/p : 153
+
+- Reverse a number
+	i/p : 1234
+	o/p : 4321
+
+- LCM
+- HCF
+
+- Perfect Number
+	- that is equal to the sum of its proper divisors
+	i/p : 6 => 1 + 2 + 3 = 6 -> Perfect Number
+	i/p : 28 
+
+
