@@ -1,0 +1,21 @@
+DRY - Don't Repeat Yourself
+
+
+S.O.L.I.D
+SRP - Single Responsibility Principle
+
+Basic Salary = 50000
+HRA = 35% of basic salary
+MA = 15% of basic salary
+TA = 20% of basic salary
+DA = 30% of basic salary
+Earnings = basic salary + HRA + MA + TA + DA
+
+Income Tax = 5% of basic salary
+PF = 2% of basic salary
+Deductions = Income Tax + PF
+
+Net Payable Salary = Earnings - Deductions
+
+
+
