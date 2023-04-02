@@ -1,5 +1,7 @@
 package OOPS_Codes;
 
+// Encapsulation - wrapping of data into a single unit
+
 public class StudentDetails {
     // Instance variables
     int rollNo;
@@ -7,7 +9,8 @@ public class StudentDetails {
     int phy;
     int chem;
     int maths;
-    int totalMarks = 300;
+    int totalMarks;
+    String collegeName;
 
     // Constructor
     // same name as class name
@@ -16,11 +19,15 @@ public class StudentDetails {
     // it will be public so that we can object of class
     // used to initialize variables
     public StudentDetails() {
-
+        System.out.println("Default Const. executed...");
+        this.totalMarks = 300;
+        this.collegeName = "DU";
     }
 
     // Parameterized constructor
     public StudentDetails(int rollNo, String name, int phy, int chem, int maths) {
+        this();     // calling default constructor - constructor chaining
+        System.out.println("Param Const. executed...");
         this.name = name;
         this.rollNo = rollNo;
         this.phy = phy;
@@ -29,6 +36,7 @@ public class StudentDetails {
     }
 
     void showStudent() {
+        System.out.println("College Name : " + this.collegeName);
         System.out.println("Name is : " + name);
         System.out.println("Roll No is : " + rollNo);
         System.out.println("Phy : " + phy);

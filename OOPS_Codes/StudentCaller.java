@@ -36,10 +36,10 @@ public class StudentCaller {
         ram.percentage();
 
 
-        StudentDetails shyam = new StudentDetails(rollNo, name, phy, chem, maths);
-        shyam.showStudent();
-        shyam.avg();
-        shyam.percentage();
+        // StudentDetails shyam = new StudentDetails(rollNo, name, phy, chem, maths);
+        // shyam.showStudent();
+        // shyam.avg();
+        // shyam.percentage();
 
         scanner.close();
     }
