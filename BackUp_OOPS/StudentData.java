@@ -50,6 +50,22 @@ public class StudentData {
     //     this.marks = marks;
     // }
 
+    void totalMarks() {
+
+    }
+
+    void avgMarks() {
+
+    }
+
+    void percentage() {
+
+    }
+
+    void grading() {
+        
+    }
+
     void showDetails() {
         System.out.println("College : " + this.college);
         System.out.println("Roll No : " + this.rollNo);
