@@ -3,7 +3,9 @@
 // Good Encapsulation = Encapsulation + Data Hiding
 
 // SRP - Single Responsibility Principle
-public class Employee {
+// public class Employee {
+    // all java classes internally inherits Object Class
+    public class Employee extends Object{
     private int empId;
     private String name;
     private double basicSalary;
@@ -75,6 +77,16 @@ public class Employee {
         double deduction = getTDS() + getPF();
         double net = earning - deduction;
         return net;
+    }
+
+    @Override
+    public String toString() {
+        String date = utils.formatDate();
+        String sal = utils.formatSalary(netSalary());
+        return  "Date : " + date + "\n" +
+                "Emp ID : " + empId + "\n" + "Emp Name : " + name + "\n" + 
+                "Emp Basic Salary : " + basicSalary + "\n" + 
+                "Emp Net Salary : " + sal;
     }
 
 }
