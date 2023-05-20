@@ -7,6 +7,13 @@ public class EmpCaller {
         // System.out.println("Enter Employee ID : ");
 
         MessageReader mr = new MessageReader();
+
+        System.out.println("Enter Country : ");
+        String countryName = scanner.nextLine();
+
+        System.out.println("Enter Language : ");
+        String countryLang = scanner.nextLine();
+
         System.out.println(mr.getValue("emp_id"));
         int empId = scanner.nextInt();
 
@@ -20,7 +27,7 @@ public class EmpCaller {
         System.out.println(mr.getValue("emp_salary"));
         double salary = scanner.nextDouble();
 
-        Employee emp_1 = new Employee(empId, name, salary);
+        Employee emp_1 = new Employee(empId, name, salary, countryName, countryLang);
         
         // System.out.println("Emp Id : " + emp_1.getEmpId());
         // System.out.println("Emp Name : " + emp_1.getName());

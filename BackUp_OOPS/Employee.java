@@ -5,19 +5,19 @@
 // SRP - Single Responsibility Principle
 // public class Employee {
     // all java classes internally inherits Object Class
-    public class Employee extends Object{
+public class Employee extends Object{
     private int empId;
     private String name;
     private double basicSalary;
 
     private EmpUtils utils;
 
-    public Employee() {
-        utils = new EmpUtils();
+    public Employee(String countryName, String countryLang) {
+        utils = new EmpUtils(countryName, countryLang);
     }
 
-    public Employee(int empId, String name, double basicSalary) {
-        this();
+    public Employee(int empId, String name, double basicSalary, String countryName, String countryLang) {
+        this(countryName, countryLang);
         this.empId = empId;
         this.name = name;
         this.basicSalary = basicSalary;
