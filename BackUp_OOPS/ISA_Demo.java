@@ -1,4 +1,5 @@
 class Loan {
+    int x = 10;
     void apply() {
         System.out.println("Apply for Loan...");
     }
@@ -11,6 +12,7 @@ class Loan {
 }
 
 class EduLoan extends Loan {
+    int y = 20;
     void eligibility() {
         System.out.println("You must be Under Graduate");
     }
@@ -33,7 +35,29 @@ class HomeLoan extends Loan {
 }
 
 public class ISA_Demo {
+
+    // Polymorphic call
+    void caller(Loan loan) {
+        loan.apply();
+        loan.emi();
+        loan.roi();
+        // Downcasting
+        if(loan instanceof EduLoan) {
+            EduLoan eduLoan = (EduLoan)loan;
+            eduLoan.eligibility();
+        }
+        else if(loan instanceof HomeLoan) {
+            HomeLoan homeLoan = (HomeLoan)loan;
+            homeLoan.timePeriod();
+        }
+    }
+
     public static void main(String[] args) {
+
+        ISA_Demo obj = new ISA_Demo();
+        obj.caller(new EduLoan());
+        obj.caller(new HomeLoan());
+
         // EduLoan edu = new EduLoan();
         // edu.apply();    // Loan class
         // edu.roi();      // EduLoan class (Override)
@@ -48,18 +72,22 @@ public class ISA_Demo {
         // home.emi();     // HomeLoan class (Override)
         // home.timePeriod();  // HomeLoan class (self)
 
-        Loan loan = new EduLoan();
-        loan.apply();    // Loan class
-        loan.roi();      // EduLoan class (Override)
-        loan.emi();      // Loan class
-        // loan.eligibility();  // EduLoan class (self)
-        
-        System.out.println("==========");
 
-        loan = new HomeLoan();
-        loan.apply();   // Loan class
-        loan.roi();     // Loan class
-        loan.emi();     // HomeLoan class (Override)
+        // Upcasting - we create object of child class 
+        // but the type of object is Parent class
+        // Loan loan = new EduLoan();
+        // loan.apply();    // Loan class
+        // loan.roi();      // EduLoan class (Override)
+        // loan.emi();      // Loan class
+        // loan.eligibility();  // EduLoan class (self)
+        // System.out.println(loan.x + "," + loan.y);
+        
+        // System.out.println("==========");
+
+        // loan = new HomeLoan();
+        // loan.apply();   // Loan class
+        // loan.roi();     // Loan class
+        // loan.emi();     // HomeLoan class (Override)
         // loan.timePeriod();  // HomeLoan class (self)
     }
 }
